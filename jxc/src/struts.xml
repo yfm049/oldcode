@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<package name="gen" extends="json-default">
+		<global-results>
+			<result name="error">/login.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+	</package>
+	<package name="default1" extends="json-default"
+		namespace="/manager">
+		<global-results>
+			<result name="error">/login.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+		<action name="user" class="com.zjzs.struts.UserAction">
+			<result name="main">/manager/index.jsp</result>
+			<result name="login">/login.jsp</result>
+		</action>
+		<action name="out" class="com.zjzs.struts.OutAction">
+			<result name="list">/manager/out_list.jsp</result>
+			<result name="detail">/manager/detail.jsp</result>
+			<result name="print">/manager/print.jsp</result>
+			<result name="update">/manager/out_update.jsp</result>
+			<result type="json">
+				<param name="root">map</param>
+				<param name="contentType">text/html</param>
+			</result>
+		</action>
+		<action name="auto" class="com.zjzs.struts.AutoAction">
+			<result type="json">
+				<param name="root">lmo</param>
+				<param name="contentType">text/html</param>
+			</result>
+		</action>
+	</package>
+
+</struts>

@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">收货确认系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">收货确认系统</string>
+    <color name="white">#FFFFFF</color>
+    <string name="timer">15000</string>
+    <string name="userName">shuangqiao</string>
+    <string name="password">shuangqiao123</string>
+	<string name="web">http://hao.360.cn/</string>
+</resources>

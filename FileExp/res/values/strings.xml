@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">FE试用版</string>
+    <string name="hello_world">初始化</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">FE试用</string>
+    <color name="main">#ff3c6380</color>
+	<color name="white">#ffffffff</color>
+	<color name="title">#ff1983b6</color>
+	<string name="gtype">游戏类型</string>
+	<string name="ktype">存储类型</string>
+	<color name="press">#004E98</color>
+</resources>

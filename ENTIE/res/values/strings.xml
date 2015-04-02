@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">安泰易居</string>
+    <string name="hello_world">安泰易居</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">安泰易居</string>
+    <color name="Baise">#EEEEEE</color>
+    <color name="Huise">#999999</color>
+    <color name="Heise">#000000</color>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Iptv_Season</string>
+    <string name="login">登录</string>
+    <string name="baseurl">http://cer.seasoniptv.com:88/</string>
+	<string name="login_dialog_title">正在登录,请稍后...</string>
+	<string name="loginsuc">登录成功</string>
+	<string name="loginfail">登录失败,用户名或密码错误</string>
+	<string name="netfail">请求服务器错误...</string>
+</resources>

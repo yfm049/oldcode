@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_corners"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:minHeight="100dip"
+        android:minWidth="100dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wxbyitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2012款男式风衣" />
+    </LinearLayout>
+
+</LinearLayout>

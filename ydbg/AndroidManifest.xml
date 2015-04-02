@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yfm.ydbg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="用户登陆"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" android:label="@string/name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FunActivity" android:theme="@style/AppTheme" android:label="@string/name" >
+           
+        </activity>
+        <activity android:name=".DbsxActivity" android:theme="@style/AppTheme" android:label="待办事项列表" >
+        </activity>
+        <activity android:name=".DbsxHuiFuActivity" android:theme="@style/AppTheme" android:label="待办事件" >
+        </activity>
+        <activity android:name=".XxCjActivity" android:theme="@style/AppTheme" android:label="信息采集" >
+        </activity>
+        <activity android:name=".MimagxActivity" android:theme="@style/AppTheme" android:label="修改密码" >
+        </activity>
+        <service android:name=".DbsxService"></service>
+    </application>
+
+</manifest>

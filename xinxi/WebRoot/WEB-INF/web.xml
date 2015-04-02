@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>Xinxi</servlet-name>
+		<servlet-class>com.xinxi.servlet.Xinxi</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>
+			This is the description of my J2EE component
+		</description>
+		<display-name>
+			This is the display name of my J2EE component
+		</display-name>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.xinxi.servlet.Login</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsType</servlet-name>
+    <servlet-class>com.xinxi.servlet.GoodsType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsItem</servlet-name>
+    <servlet-class>com.xinxi.servlet.GoodsItem</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Version</servlet-name>
+    <servlet-class>com.xinxi.servlet.Version</servlet-class>
+  </servlet>
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>Xinxi</servlet-name>
+		<url-pattern>/servlet/Xinxi</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/servlet/Login</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsType</servlet-name>
+    <url-pattern>/servlet/GoodsType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsItem</servlet-name>
+    <url-pattern>/servlet/GoodsItem</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Version</servlet-name>
+    <url-pattern>/servlet/Version</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Bluetooth</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">电源管理</string>
+    <color name="baise">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <string name="oem">某某公司，v1.0版本</string>
+
+</resources>

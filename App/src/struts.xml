@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+	<package name="default1" extends="json-default"
+		namespace="/">
+		<action name="app" class="com.app.action.AppAction">
+			<result type="json" name="mapjson">
+				<param name="root">map</param>
+				<param name="contentType">text/html</param>
+			</result>
+			<result type="json" name="listjson">
+				<param name="root">lmo</param>
+				<param name="contentType">text/html</param>
+			</result>
+		</action>
+		
+	</package>
+
+</struts>

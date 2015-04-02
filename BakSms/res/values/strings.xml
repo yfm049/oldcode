@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">备份通话记录到邮箱</string>
+    <string name="app_name">recordmail</string>
+    <color name="white">#FFFFFFFF</color>
+    <color name="heise">#00000000</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/baise"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="false" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/publish_bottom"
+        android:baselineAligned="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约时间"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/huise" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/baise"
+        android:orientation="vertical" >
+
+        <com.yfm.net.MyGridView
+            android:id="@+id/shuju"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="5">
+
+        </com.yfm.net.MyGridView>
+    </LinearLayout>
+
+</LinearLayout>

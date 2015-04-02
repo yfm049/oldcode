@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">工作手机</string>
+    <string name="hello_world">客户端</string>
+    <string name="menu_settings">手机信息</string>
+    <string name="title_activity_main">ERP登录</string>
+	<color name="baise">#F0F0F0</color>
+</resources>

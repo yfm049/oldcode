@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ktype">
+        	<item>内置</item>
+        	<item>外置</item>
+    </string-array>
+    <string-array name="gtype">
+        	<item>全部</item>
+        	<item>fba游戏</item>
+        	<item>fpse游戏</item>
+        	<item>n64oid游戏</item>
+        	<item>gbaoid游戏</item>
+        	<item>snesoid游戏</item>
+        	<item>genoid游戏</item>
+        	<item>gbcoid游戏</item>
+        	<item>nesoid游戏</item>
+    </string-array>
+</resources>

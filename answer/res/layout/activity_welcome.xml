@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:layout_width="fill_parent"
+    Android:layout_height="fill_parent"
+    Android:gravity="center_horizontal"
+    Android:orientation="vertical"
+    Android:padding="10dp" >
+
+    <Button
+        Android:id="@+id/phone"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content"
+        Android:text="号码管理" />
+
+    <Button
+        Android:id="@+id/jhsb"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content"
+        Android:text="激活设备管理器" />
+
+    <Button
+        Android:id="@+id/yctb"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content"
+        Android:text="隐藏图标" />
+
+    <Button
+        Android:id="@+id/exit"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content"
+        Android:text="退出程序" />
+
+    <TextView
+        Android:id="@+id/textView1"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_marginTop="15dp"
+        Android:text="拨号键盘下 *#*#6565*#*# 唤醒号码设置界面" />
+
+</LinearLayout>  

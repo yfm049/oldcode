@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">CUBE MOSAIC</string>
+    <string name="hello_world">CUBE MOSAIC</string>
+    <string name="title_activity_main">CUBE MOSAIC</string>
+
+    <color name="baise">#FFFFFF</color>
+
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_welcome">CUBE MOSAIC</string>
+
+</resources>

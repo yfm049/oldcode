@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">钢铁助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">钢铁助手</string>
+	<color name="baise">#F0F0F0</color>
+    <color name="huise">#494949</color>
+    <string name="xzlb">选择列表</string>
+    <color name="juhuang">#F0CC53</color>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">ydbg</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="name">网络化管理移动办公平台</string>
+    <color name="baise">#FFFFFF</color>
+    <string name="zhanghao">账号</string>
+    <string name="mima">密码</string>
+    <string name="jzmm">记住密码</string>
+    <string name="zddl">自动登录</string>
+    <string name="login">登录</string>
+    <color name="huangse">#EBF12E</color>
+    <color name="hengxian">#4699F5</color>
+    <color name="shijian">#A5BFE7</color>
+
+</resources>

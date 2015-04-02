@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Wed Dec 05 15:56:23 CST 2012
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=Caiji_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.MainApp
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

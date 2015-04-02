@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+	<filter>
+		<filter-name>Code</filter-name>
+		<filter-class>com.microblog.filter.Code</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Code</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+
+		<servlet-name>DisplayChart</servlet-name>
+
+		<servlet-class>org.jfree.chart.servlet.DisplayChart</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RemoveBlogServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.RemoveBlogServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RemoveSessionServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.RemoveSessionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddUserServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AddUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddCheckServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AddCheckServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginImgServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.LoginImgServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddBlogServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AddBlogServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SelfWeibo</servlet-name>
+		<servlet-class>com.microblog.servlet.SelfWeibo</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FansServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.FansServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BefansServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.BefansServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AttentionSevlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AttentionSevlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FriendSevlet</servlet-name>
+		<servlet-class>com.microblog.servlet.FriendSevlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DelConcerServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.DelConcerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MyBlogServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.MyBlogServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AllServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AllServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GetuserServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.GetuserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdateServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.UpdateServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpdatepwdServelet</servlet-name>
+		<servlet-class>com.microblog.servlet.UpdatepwdServelet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.CheckServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ZhuanfaServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ZhuanfaServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.SearchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>PageNumServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.PageNumServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CommentServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.CommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AllCommentServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AllCommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowUserServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ShowUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GetUserServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.GetUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CollectionServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.CollectionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AllCollectionServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.AllCollectionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RemoveCollectionServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.RemoveCollectionServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BackuppwdServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.BackuppwdServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BackupServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.BackupServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ExportServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ExportServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ImportServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ImportServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ImageServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ImageServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ImageServlet2</servlet-name>
+		<servlet-class>com.microblog.servlet.ImageServlet2</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckServlet1</servlet-name>
+		<servlet-class>com.microblog.servlet.CheckServlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MailServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.MailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowMyCommentServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.ShowMyCommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RemoveCommentServlet</servlet-name>
+		<servlet-class>com.microblog.servlet.RemoveCommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Caculate1Servlet</servlet-name>
+		<servlet-class>com.microblog.servlet.Caculate1Servlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BallotServlet</servlet-name>
+    <servlet-class>com.microblog.servlet.BallotServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowBallotServlet</servlet-name>
+    <servlet-class>com.microblog.servlet.ShowBallotServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowBallot2Servlet</servlet-name>
+    <servlet-class>com.microblog.servlet.ShowBallot2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Ballot2Servlet</servlet-name>
+    <servlet-class>com.microblog.servlet.Ballot2Servlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<servlet-mapping>
+
+		<servlet-name>DisplayChart</servlet-name>
+
+		<url-pattern>/DisplayChart</url-pattern>
+
+	</servlet-mapping>
+	
+
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/servlet/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveSessionServlet</servlet-name>
+		<url-pattern>/servlet/RemoveSessionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddUserServlet</servlet-name>
+		<url-pattern>/servlet/AddUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddCheckServlet</servlet-name>
+		<url-pattern>/servlet/AddCheckServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginImgServlet</servlet-name>
+		<url-pattern>/servlet/LoginImgServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddBlogServlet</servlet-name>
+		<url-pattern>/servlet/AddBlogServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SelfWeibo</servlet-name>
+		<url-pattern>/servlet/SelfWeibo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FansServlet</servlet-name>
+		<url-pattern>/servlet/FansServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BefansServlet</servlet-name>
+		<url-pattern>/servlet/BefansServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AttentionSevlet</servlet-name>
+		<url-pattern>/servlet/AttentionSevlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FriendSevlet</servlet-name>
+		<url-pattern>/servlet/FriendSevlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DelConcerServlet</servlet-name>
+		<url-pattern>/servlet/DelConcerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyBlogServlet</servlet-name>
+		<url-pattern>/servlet/MyBlogServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveBlogServlet</servlet-name>
+		<url-pattern>/servlet/RemoveBlogServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AllServlet</servlet-name>
+		<url-pattern>/servlet/AllServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetuserServlet</servlet-name>
+		<url-pattern>/servlet/GetuserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateServlet</servlet-name>
+		<url-pattern>/servlet/UpdateServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdatepwdServelet</servlet-name>
+		<url-pattern>/servlet/UpdatepwdServelet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/servlet/FileUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckServlet</servlet-name>
+		<url-pattern>/servlet/CheckServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ZhuanfaServlet</servlet-name>
+		<url-pattern>/servlet/ZhuanfaServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/servlet/SearchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PageNumServlet</servlet-name>
+		<url-pattern>/servlet/PageNumServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CommentServlet</servlet-name>
+		<url-pattern>/servlet/CommentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AllCommentServlet</servlet-name>
+		<url-pattern>/servlet/AllCommentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowUserServlet</servlet-name>
+		<url-pattern>/servlet/ShowUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetUserServlet</servlet-name>
+		<url-pattern>/servlet/GetUserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CollectionServlet</servlet-name>
+		<url-pattern>/servlet/CollectionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AllCollectionServlet</servlet-name>
+		<url-pattern>/servlet/AllCollectionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveCollectionServlet</servlet-name>
+		<url-pattern>/servlet/RemoveCollectionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BackuppwdServlet</servlet-name>
+		<url-pattern>/servlet/BackuppwdServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BackupServlet</servlet-name>
+		<url-pattern>/servlet/BackupServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExportServlet</servlet-name>
+		<url-pattern>/servlet/ExportServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ImportServlet</servlet-name>
+		<url-pattern>/servlet/ImportServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ImageServlet</servlet-name>
+		<url-pattern>/servlet/ImageServlet</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>ImageServlet2</servlet-name>
+		<url-pattern>/servlet/ImageServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckServlet1</servlet-name>
+		<url-pattern>/servlet/CheckServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MailServlet</servlet-name>
+		<url-pattern>/servlet/MailServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowMyCommentServlet</servlet-name>
+		<url-pattern>/servlet/ShowMyCommentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RemoveCommentServlet</servlet-name>
+		<url-pattern>/servlet/RemoveCommentServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Caculate1Servlet</servlet-name>
+		<url-pattern>/servlet/Caculate1Servlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BallotServlet</servlet-name>
+    <url-pattern>/servlet/BallotServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowBallotServlet</servlet-name>
+    <url-pattern>/servlet/ShowBallotServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowBallot2Servlet</servlet-name>
+    <url-pattern>/servlet/ShowBallot2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Ballot2Servlet</servlet-name>
+    <url-pattern>/servlet/Ballot2Servlet</url-pattern>
+  </servlet-mapping>
+
+
+
+
+	<listener>
+		<listener-class>com.microblog.listener.Init</listener-class>
+	</listener>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

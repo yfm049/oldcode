@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/heise" >
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="旅游11路(植物园-省博物馆)"
+            android:textColor="@color/myColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/heise" >
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="旅游线路; 6:00-20:30; 2.00元(植物园至岳村票价1元，除A卡外各种证卡无效，岳村至省博物馆票价1元，IC卡及各种免费乘车证件有效);"
+            android:textColor="@color/myColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/myColor"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:text="植物园;岳村;虚云禅寺;大马村;于底;大郭村西;电气化;飞行学院;大郭新村;东简良;古中山公园;西二环广源路口;西二环合作路口;西二环新华路口;西二环中山路口;西二环裕华路口;城角庄;益友百货;西清公园;六中;艺术中心(万象天成);长途汽车站;棉七小区;平安公园;河北大戏院;河北报社(河北电台);科技大厦;省博物馆;" />
+
+    </LinearLayout>
+
+</LinearLayout>

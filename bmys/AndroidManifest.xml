@@ -1,0 +1,114 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yfm.pro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LiebiaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".YuyueActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TouSuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ZhichiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GuanyuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TongzhiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name=".MessageService"
+            android:screenOrientation="portrait" >
+        </service>
+
+        <activity
+            android:name=".RegActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ShouyeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WxbyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WxbyXxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DiTuActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensor" >
+        </activity>
+    </application>
+
+</manifest>

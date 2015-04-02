@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/heise"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="设置邮箱" />
+
+    <Button
+        android:id="@+id/yincang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="隐藏图标" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="先设置你的邮箱 使用163的邮箱"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏图标后要想重新呼出设置界面请在拨号界面输入*#*#6969#*#*号码"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

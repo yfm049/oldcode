@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    Android:layout_width="fill_parent"
+    Android:layout_height="wrap_content"
+    Android:orientation="horizontal"
+    >
+
+    <TextView
+        Android:layout_margin="5dip"
+        Android:textStyle="bold"
+        Android:id="@+id/myphonenum"
+        Android:layout_width="fill_parent"
+        Android:layout_height="wrap_content" 
+        Android:textSize="18dip"/>
+
+</LinearLayout>

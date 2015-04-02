@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="xinxi"
+  id="myeclipse.1348880391281"
+  context-root="/xinxi"
+  j2ee-spec="5.0"
+  archive="xinxi.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

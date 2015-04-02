@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">博美印刷</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">投诉建议</string>
+    <string name="title_activity_main">博美印刷</string>
+    <string name="liebiao">列表</string>
+    <color name="baise">#F0F0F0</color>
+    <color name="huise">#494949</color>
+    <string name="shangpin">商品</string>
+    <string name="_1">1</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="active">活动</string>
+    <color name="juhuang">#F0CC53</color>
+	<color name="font_red">#ffff0000</color>
+</resources>

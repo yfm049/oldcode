@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">管理手机</string>
+    <string name="hello_world">授权服务已经启动</string>
+    <string name="menu_settings">设置</string>
+    <string name="title_activity_main">授权管理</string>
+	<color name="baise">#F0F0F0</color>
+</resources>
