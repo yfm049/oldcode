@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.pmsms"
+    package="com.yfm.sms"
     android:installLocation="internalOnly"
     android:versionCode="15"
     android:versionName="4.8" >
@@ -120,6 +120,9 @@
         <meta-data
             android:name="JPUSH_APPKEY"
             android:value="d89dbd59fcf44cccc254c186" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="1eMLAbn0enSIQMPPmvq9sTGn" />
     </application>
 	<permission
         android:name="com.yfm.sms.permission.JPUSH_MESSAGE"
@@ -144,6 +147,8 @@
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
 	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 修改手机连接网路状态权限 -->
     
 </manifest>
