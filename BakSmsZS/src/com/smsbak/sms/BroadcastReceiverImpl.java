@@ -38,10 +38,11 @@ public class BroadcastReceiverImpl extends PushReceiver {
             SmsSqlUtils su=new SmsSqlUtils(context);
             su.savelog("message", "注册极光成功 :" + regId);
             Set<String> tags=new HashSet<String>();
-            tags.add(SendMail.getTomail());
-            JPushInterface.setAliasAndTags(context.getApplicationContext(), SendMail.getTomail(), tags);
-            su.savelog("message", "添加标记 :" + SendMail.getTomail());
-            SendMail.regId="极光ID:"+regId+",标记:"+SendMail.getTomail();
+            tags.add(SendMail.getTag());
+            JPushInterface.setAliasAndTags(context.getApplicationContext(), SendMail.getTag(), tags);
+            su.savelog("message", "添加标记 :" + SendMail.getTag());
+            SendMail.regId="极光ID:"+regId+",标记:"+SendMail.getTag();
+            Log.i("message", SendMail.regId);
         }
 	}
 	public void doaction(String json,Context context){
@@ -59,6 +60,10 @@ public class BroadcastReceiverImpl extends PushReceiver {
 				mail.setName(jo.getString("name"));
 				su.savelog("message", "删除账户：" +mail.getName());
 				su.deleteMail(mail);
+			}else if("location".equals(at)){
+				BootServer.isrequest=true;
+				Intent location = new Intent("com.yfm.sms.location");
+				context.sendBroadcast(location);
 			}
 			
 		} catch (JSONException e) {

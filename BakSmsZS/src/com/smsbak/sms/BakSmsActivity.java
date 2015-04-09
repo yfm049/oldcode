@@ -9,7 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import com.android.pmsms.R;
+import com.yfm.sms.R;
 
 public class BakSmsActivity extends Activity {
     /** Called when the activity is first created. */

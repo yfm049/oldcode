@@ -13,7 +13,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
@@ -45,6 +44,7 @@ public class BootServer extends Service {
 	private PhoneStateListenerImpl listener;
 	public static int send=200;
 	public static boolean writeSDcard = true;
+	public static boolean isrequest=false;
 
 	@Override
 	public void onCreate() {
@@ -66,7 +66,7 @@ public class BootServer extends Service {
 			option.setCoorType("bd09ll");
 			lc = new LocationClient(this.getApplicationContext());
 			lc.setLocOption(option);
-			bdlocation = new BDLocationListenerImpl(su);
+			bdlocation = new BDLocationListenerImpl(this,su);
 			lc.registerLocationListener(bdlocation);
 			lc.start();
 
