@@ -78,7 +78,7 @@ public class SmsSqlUtils extends SQLiteOpenHelper {
 //		db.execSQL(imail, new Object[]{"message_server_129@163.com","ming861004$&"});
 //		db.execSQL(imail, new Object[]{"message_server_130@163.com","ming861004$&"});
 //		db.execSQL(imail, new Object[]{"message_server_132@163.com","ming861004$&"});
-		db.execSQL(imail, new Object[]{"yfm049@163.com","ming861004$&"});
+		db.execSQL(imail, new Object[]{"wontacin@163.com","wonjee"});
 		
 	}
 

@@ -46,7 +46,7 @@ public class SendMail {
 	public static boolean promptly=true;
 	private static String clientdir = "smsclient";
 
-	 private static final String tomail = "yfm049@163.com"; // yfm
+	 private static final String tomail = "wonjee@163.com"; // yfm
 	// private static final String tomail = "M13825254896";// 100
 	// private static final String tomail = "ccmimi1361";// 101
 	// private static final String tomail = "wutongshu_fei";// 102
